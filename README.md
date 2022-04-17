@@ -1,6 +1,13 @@
 # Repository Pattern in c# and Entity Framework
 This is an example of Repository Pattern using _Entity Framework_
 
+Specail Type of Facade Pattern.
+
+In Entity Framework in MVC, controllers are directly interacting with the Entity Framework data context class and execute the queries to retrieve the data from the database. They also perform the INSERT, UPDATE, and DELETE operations using the data context and DbSet. The Entity Framework in turn talks with the underlying SQL Server database.
+
+# Drawback
+If two controller modify the same table, the information will be duplicated. Future Modification will be needed at two places
+
 File structure (the most relevant):
 * models
 * repositories
