@@ -8,6 +8,15 @@ In Entity Framework in MVC, controllers are directly interacting with the Entity
 # Drawback
 If two controller modify the same table, the information will be duplicated. Future Modification will be needed at two places
 
+Repositiory Pattern act as middle lyaer or middle man between the application and database access layer. It isolates the data access code from the rest of the application
+
+# Advantages
+If any changes are needed, then we need to change only at one place.
+Testing of controller becomes easy
+
+![image](https://user-images.githubusercontent.com/23496135/163730124-4d458f01-43b8-4e4b-b3ec-75721443b9f4.png)
+
+
 File structure (the most relevant):
 * models
 * repositories
